@@ -134,7 +134,7 @@ while True:
 	print("3. Implementar rubber ducky para obtener RCE")
 	print("4. Subir codigo para deauther al esp8266")
 	print("5. Implementar ataque a una red wifi")
-
+	print("6. Salir")
 	opcion = input("[+] Introduce opcion: ")
 
 	if opcion == "1":
